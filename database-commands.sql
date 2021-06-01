@@ -1,0 +1,44 @@
+CREATE DATABASE IF NOT EXISTS swing;
+use swing;
+CREATE TABLE `swing`.`admin` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NOT NULL,
+  `phone` VARCHAR(45) NULL DEFAULT NULL,
+  `email` VARCHAR(45) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `swing`.`faculty` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NOT NULL,
+  `Name` VARCHAR(45) NULL DEFAULT NULL,
+  `phone` VARCHAR(45) NULL DEFAULT NULL,
+  `email` VARCHAR(45) NULL DEFAULT NULL,
+  `dept` VARCHAR(45) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`, `username`));
+
+
+CREATE TABLE `swing`.`students` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `password` VARCHAR(45) NOT NULL DEFAULT '123456789',
+  `Firstname` VARCHAR(45) NULL DEFAULT NULL,
+  `Lastname` VARCHAR(45) NULL DEFAULT NULL,
+  `fathername` VARCHAR(45) NULL DEFAULT NULL,
+  `mothername` VARCHAR(45) NULL DEFAULT NULL,
+  `phone` VARCHAR(45) NULL DEFAULT NULL,
+  `email` VARCHAR(45) NULL DEFAULT NULL,
+  `gender` VARCHAR(45) NULL DEFAULT NULL,
+  `year` VARCHAR(45) NULL DEFAULT NULL,
+  `Grp` VARCHAR(45) NULL DEFAULT NULL,
+  `sem` VARCHAR(45) NULL DEFAULT NULL,
+  `regat` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+  `studentscol` VARCHAR(45) NULL DEFAULT NULL,
+  `regby` VARCHAR(45) NULL DEFAULT NULL,
+ PRIMARY KEY (`id`));
+
+INSERT INTO `swing`.`admin` (`username`, `password`, `id`, `phone`, `email`) VALUES ('Jonathan', '123456789', '10001', '9848012345', 'jonathan@oracle.com');
+
+ alter table swing.students AUTO_INCREMENT=98001;
+ alter table swing.faculty AUTO_INCREMENT=7340001;
+

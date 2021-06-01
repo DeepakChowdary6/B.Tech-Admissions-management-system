@@ -6,7 +6,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path=""/>
-	<classpathentry kind="lib" path="C:/Users/deepa/Documents/Btech-admissions-system-Deepak/submission/rs2xml.jar"/>
-	<classpathentry kind="lib" path="C:/Users/deepa/Documents/Btech-admissions-system-Deepak/mysql-connector-java-8.0.25.jar"/>
-	<classpathentry kind="output" path="out/production/Btech-admissions-system-Deepak"/>
+	<classpathentry kind="lib" path="C:/Users/deepa/Documents/Btech-admissions-system/rs2xml.jar"/>
+	<classpathentry kind="lib" path="C:/Users/deepa/Documents/Btech-admissions-system/mysql-connector-java-8.0.25.jar"/>
+	<classpathentry kind="output" path=""/>
 </classpath>
